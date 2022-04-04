@@ -1,0 +1,56 @@
+body {
+  background-image: url("./img/bg1.png");
+}
+.jumbotron {
+  background-image: url("./img/bg-header.jpg");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 70%;
+}
+
+@media screen and (max-width: 550px) {
+  .jumbotron {
+    background-position: -200px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.container-jmb {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.skill {
+  background-color: #b2b1af;
+}
+
+.other-skill {
+  background-color: salmon;
+}
+
+.form {
+  width: 600px;
+  margin: 10px auto;
+}
+
+.background {
+  background-color: #b2b1af;
+}
+
+.footer {
+  line-height: 55px;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.btn {
+  background-color: #b2b1af;
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 400px;
+    margin: 10px auto;
+  }
+}

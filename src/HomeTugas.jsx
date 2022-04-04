@@ -1,10 +1,10 @@
 import React from "react";
-import BasicComponent from "./Tugas/BasicComponent/BasicComponent";
+import Boostrap from "./Tugas/Styling/Boostrap";
 
 const HomeTugas = () => {
   return (
     <div>
-      <BasicComponent nama="Ibnul Syam" usia="26" />
+      <Boostrap />
     </div>
   );
 };
