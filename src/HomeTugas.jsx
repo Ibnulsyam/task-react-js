@@ -1,10 +1,10 @@
 import React from "react";
-import Boostrap from "./Tugas/Styling/Boostrap";
+import Registrasi from "./Tugas/Form/Registrasi";
 
 const HomeTugas = () => {
   return (
     <div>
-      <Boostrap />
+      <Registrasi />
     </div>
   );
 };
