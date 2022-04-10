@@ -1,10 +1,10 @@
 import React from "react";
-import Registrasi from "./Tugas/Form/Registrasi";
+import PortalBerita from "./Tugas/LifecycleComponents/PortalBerita";
 
 const HomeTugas = () => {
   return (
     <div>
-      <Registrasi />
+      <PortalBerita />
     </div>
   );
 };
