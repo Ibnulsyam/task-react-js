@@ -12,7 +12,7 @@ import {
 import axios from "axios";
 
 let url =
-  "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=f7221eb3fbe04e9d92da868e31ab7743";
+  "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=a65d9f37045740e689405afbab50ab1e";
 
 class PortalBerita extends Component {
   state = {
@@ -23,12 +23,12 @@ class PortalBerita extends Component {
   handleInputChange = (e) => {
     let search = e.target.value;
     this.setState({
-      link: `https://newsapi.org/v2/everything?q=${search}&from=2022-03-10&sortBy=publishedAt&apiKey=f7221eb3fbe04e9d92da868e31ab7743`,
+      link: `https://newsapi.org/v2/everything?q=${search}&from=2022-03-10&sortBy=publishedAt&apiKey=a65d9f37045740e689405afbab50ab1e`,
     });
 
     if (search.length === 0) {
       this.setState({
-        link: "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=f7221eb3fbe04e9d92da868e31ab7743",
+        link: "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=a65d9f37045740e689405afbab50ab1e",
       });
     }
     this.getDatatoAPI(this.state.link);
