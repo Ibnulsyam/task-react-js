@@ -7,10 +7,10 @@ const Cards = (props) => {
   let [users, setUsers] = useState([]);
 
   let url =
-    "https://newsapi.org/v2/top-headlines?country=us&apiKey=a65d9f37045740e689405afbab50ab1e";
+    "https://newsapi.org/v2/top-headlines?country=us&apiKey=0afa082b44e7418c95787ba23b786282";
 
   if (props.value.length > 0) {
-    url = `https://newsapi.org/v2/everything?q=${props.value}&apiKey=a65d9f37045740e689405afbab50ab1e`;
+    url = `https://newsapi.org/v2/everything?q=${props.value}&apiKey=0afa082b44e7418c95787ba23b786282`;
   }
 
   let getDataToAPI = () => {
