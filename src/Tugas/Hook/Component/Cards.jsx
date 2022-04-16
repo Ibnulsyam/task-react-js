@@ -19,7 +19,7 @@ const Cards = (props) => {
 
   useEffect(() => {
     getDataToAPI();
-  }, [props.value]);
+  });
 
   return (
     <Container
