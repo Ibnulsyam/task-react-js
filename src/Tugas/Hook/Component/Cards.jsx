@@ -5,7 +5,6 @@ import { Button, Card, Container } from "react-bootstrap";
 
 const Cards = (props) => {
   let [users, setUsers] = useState([]);
-  let [link, setLink] = useState("");
 
   let url =
     "https://newsapi.org/v2/top-headlines?country=us&apiKey=a65d9f37045740e689405afbab50ab1e";
