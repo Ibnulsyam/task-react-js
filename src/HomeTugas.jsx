@@ -1,5 +1,5 @@
 import React from "react";
-import PortalBerita from "./Tugas/LifecycleComponents/PortalBerita";
+import PortalBerita from "./Tugas/Hook/PortalBerita";
 
 const HomeTugas = () => {
   return (
