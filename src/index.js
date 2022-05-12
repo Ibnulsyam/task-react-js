@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import HomeTugas from "./HomeTugas";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <HomeTugas />
+    <BrowserRouter>
+      <HomeTugas />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Card, Container } from "react-bootstrap";
@@ -6,21 +6,26 @@ import { Button, Card, Container } from "react-bootstrap";
 const Cards = (props) => {
   let [users, setUsers] = useState([]);
 
-  let url =
+  const defaultUrl =
     "https://newsapi.org/v2/top-headlines?country=us&apiKey=0afa082b44e7418c95787ba23b786282";
 
-  if (props.value.length > 0) {
-    url = `https://newsapi.org/v2/everything?q=${props.value}&apiKey=0afa082b44e7418c95787ba23b786282`;
-  }
+  const [url, setUrl] = useState(defaultUrl);
 
-  let getDataToAPI = () => {
+  useEffect(() => {
+    if (props.value.length > 0) {
+      setUrl(
+        `https://newsapi.org/v2/everything?q=${props.value}&apiKey=0afa082b44e7418c95787ba23b786282`
+      );
+    }
+  }, [props.value]);
+
+  const getDataToAPI = useCallback(() => {
     axios.get(url).then((rest) => setUsers(rest.data.articles));
-  };
+  }, [url]);
 
   useEffect(() => {
     getDataToAPI();
-  });
-
+  }, [getDataToAPI]);
   return (
     <Container
       style={{
