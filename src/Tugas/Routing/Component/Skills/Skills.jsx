@@ -44,7 +44,7 @@ const ConSkill = styled.div`
 `;
 
 const Skills = () => {
-  const [skill, setSkill] = useState([
+  const [skill] = useState([
     "HTML",
     "CSS",
     "JAVASCRIPT ",
