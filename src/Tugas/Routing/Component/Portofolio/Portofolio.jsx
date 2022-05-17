@@ -9,16 +9,19 @@ const ConPortofolio = styled.div`
   border-radius: 20px;
   margin-top: 50px;
 `;
+const Desc = styled.p`
+  color: white;
+`;
 
 const Portofolio = () => {
   return (
     <ConPortofolio>
-      <p>
+      <Desc>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nobis
         est odit nesciunt maiores quia adipisci. Unde, dolores veritatis rerum
         porro veniam esse nemo repellendus, cumque culpa dignissimos similique
         voluptatum.
-      </p>
+      </Desc>
     </ConPortofolio>
   );
 };

@@ -1,10 +1,10 @@
 import React from "react";
-import Routing from "./Tugas/Routing/Routing";
+import Redux from "./Tugas/Redux/Redux";
 
 const HomeTugas = () => {
   return (
     <div>
-      <Routing />
+      <Redux />
     </div>
   );
 };

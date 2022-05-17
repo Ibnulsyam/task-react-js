@@ -10,10 +10,14 @@ const ConExperience = styled.div`
   margin-top: 50px;
 `;
 
+const Desc = styled.p`
+  color: white;
+`;
+
 const Experience = () => {
   return (
     <ConExperience>
-      <p>
+      <Desc>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nobis
         est odit nesciunt maiores quia adipisci. Unde, dolores veritatis rerum
         porro veniam esse nemo repellendus, cumque culpa dignissimos similique
@@ -21,7 +25,7 @@ const Experience = () => {
         Blanditiis odit praesentium minus libero, beatae repellendus autem iusto
         veniam deserunt corporis molestias, deleniti ratione vero tempore harum
         ex commodi aliquam quibusdam?
-      </p>
+      </Desc>
     </ConExperience>
   );
 };
